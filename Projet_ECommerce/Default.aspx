@@ -9,9 +9,9 @@
     <link href="Style/Style.css" rel="stylesheet" />
     <style type="text/css">
 
-        .auto-style1 {
-            width: 137px;
-            height: 783px;
+        .auto-style2 {
+            width: 500px;
+            height: 466px;
         }
 
     </style>
@@ -49,8 +49,9 @@
     &nbsp;<img alt="" class="Fond" src="Image/beige_leather_1024.jpg" style="background-image: url('Image/beige_leather_1024.jpg'); background-attachment: fixed;" /><asp:Label ID="Label8" runat="server" CssClass="Connexion" Text="Label"></asp:Label>
         <asp:Label ID="ErreurLogin" runat="server" CssClass="ErreurLogin"></asp:Label>
         <asp:Button ID="Deconnexion" runat="server" CssClass="BoutonDeconnexion" Text="Deconnexion" OnClick="Deconnexion_Click" />
-    </form>
     <img id="Pub1" alt="" class="Pub1" src="Image/Pub1.PNG" />
     <img id="Pub2" alt="" class="Pub2" src="Image/Pub2.PNG" />
+        <img alt="" class="Localisation" src="Image/Localisation.jpg" /><asp:Label ID="Label9" runat="server" CssClass="LabelAcceuil" Font-Bold="True" Font-Size="XX-Large" Text="Bienvenue sur Abeillons nous !!             Le fournisseur de bière disponible sur toute la France !!!!"></asp:Label>
+    </form>
     </body>
 </html>

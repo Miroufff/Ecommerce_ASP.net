@@ -56,8 +56,7 @@
         </div>
         <asp:GridView ID="GridView1" runat="server" CssClass="GridView1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
-                <asp:CommandField ButtonType="Button" ShowDeleteButton="True" />
-                <asp:CommandField ButtonType="Button" ShowEditButton="True" />
+                <asp:ButtonField ButtonType="Button" CommandName="Select" Text="Supprimer" />
             </Columns>
         </asp:GridView>
         <asp:Label ID="PrixTotalLabel" runat="server" CssClass="PrixTotal auto-style1" Text="PrixTotal : " Visible="False"></asp:Label>

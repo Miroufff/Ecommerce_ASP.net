@@ -118,22 +118,45 @@ namespace Projet_ECommerce
                     {
                         panier.Quantite = panier.Quantite - 1;
                         panier.PrixTotal = panier.Prix * panier.Quantite;
-
+                        if (panier.Quantite == 0)
+                        {
+                            Lt.RemoveAt(0);
+                            Session["Session"] = Lt;
+                            Response.Redirect("Panier.aspx");
+                        }
                     }
                     if (panier.NomProduit.Equals("Weed"))
                     {
                         panier.Quantite = panier.Quantite - 1;
                         panier.PrixTotal = panier.Prix * panier.Quantite;
+                        if (panier.Quantite == 0)
+                        {
+                            Lt.RemoveAt(1);
+                            Session["Session"] = Lt;
+                            Response.Redirect("Panier.aspx");
+                        }
                     }
                     if (panier.NomProduit.Equals("Leffe"))
                     {
                         panier.Quantite = panier.Quantite - 1;
                         panier.PrixTotal = panier.Prix * panier.Quantite;
+                        if (panier.Quantite == 0)
+                        {
+                            Lt.RemoveAt(2);
+                            Session["Session"] = Lt;
+                            Response.Redirect("Panier.aspx");
+                        }
                     }
                     if (panier.NomProduit.Equals("Kronenbourg"))
                     {
                         panier.Quantite = panier.Quantite - 1;
                         panier.PrixTotal = panier.Prix * panier.Quantite;
+                        if (panier.Quantite == 0)
+                        {
+                            Lt.RemoveAt(3);
+                            Session["Session"] = Lt;
+                            Response.Redirect("Panier.aspx");
+                        }
                     }
                 }
 

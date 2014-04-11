@@ -405,3 +405,18 @@
     left: 572px;
     width: 135px;
 }
+
+.Localisation {
+    z-index: 5;
+    position: absolute;
+    top: 374px;
+    left: 434px;
+}
+
+.LabelAcceuil {
+    z-index: 5;
+    position: absolute;
+    top: 241px;
+    left: 457px;
+    width: 471px;
+}
