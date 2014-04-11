@@ -1,0 +1,6 @@
+E:\IIA\ASP.net\Projet\Projet_ECommerce\Projet_ECommerce\bin\Projet_ECommerce.dll.config
+E:\IIA\ASP.net\Projet\Projet_ECommerce\Projet_ECommerce\bin\Projet_ECommerce.dll
+E:\IIA\ASP.net\Projet\Projet_ECommerce\Projet_ECommerce\bin\Projet_ECommerce.pdb
+E:\IIA\ASP.net\Projet\Projet_ECommerce\Projet_ECommerce\obj\Debug\Projet_ECommerce.dll
+E:\IIA\ASP.net\Projet\Projet_ECommerce\Projet_ECommerce\obj\Debug\Projet_ECommerce.pdb
+E:\IIA\ASP.net\Projet\Projet_ECommerce\Projet_ECommerce\obj\Debug\Projet_ECommerce.csprojResolveAssemblyReference.cache

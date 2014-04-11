@@ -1,0 +1,407 @@
+﻿body {    height: 828px;
+}
+
+.Connexion {
+    z-index: 5;
+    position: absolute;
+    top: -342px;
+    left: -369px;
+    height: 115px;
+    width: 262px;
+}
+
+.Titre1 {
+    z-index: 5;
+    position: absolute;
+    top: 33px;
+    left: 617px;
+    height: 48px;
+    width: 187px;
+}
+
+.Lien1 {
+    z-index: 5;
+    position: absolute;
+    top: 45px;
+    left: 986px;
+    width: 123px;
+    height: 33px;
+}
+
+.Lien2 {
+    z-index: 5;
+    position: absolute;
+    top: 45px;
+    left: 1113px;
+    width: 123px;
+    height: 34px;
+    right: 2px;
+}
+
+.Lien3 {
+    z-index: 5;
+    position: absolute;
+    top: 84px;
+    left: 985px;
+    width: 123px;
+    height: 34px;
+}
+
+.Lien4 {
+    z-index: 5;
+    position: absolute;
+    top: 85px;
+    left: 1112px;
+    width: 123px;
+    height: 34px;
+}
+.bouton1 {
+    z-index: 5;
+    position: absolute;
+    top: 29px;
+    left: 836px;
+}
+
+.image1 {
+    z-index: 5;
+    position: absolute;
+    top: 20px;
+    left: 519px;
+    height: 67px;
+    width: 86px;
+    margin-top: 0px;
+}
+
+.Fond {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 202px;
+    width: 1267px;
+}
+
+.Login {
+    z-index: 5;
+    position: absolute;
+    top: 45px;
+    left: 56px;
+    height: 19px;
+    width: 33px;
+    bottom: 538px;
+}
+
+.Password {
+    z-index: 5;
+    position: absolute;
+    top: 75px;
+    left: 57px;
+}
+
+.TextBoxLogin {
+    z-index: 5;
+    position: absolute;
+    top: 43px;
+    left: 138px;
+    height: 20px;
+}
+
+.TextBoxPassword {
+    z-index: 5;
+    position: absolute;
+    top: 70px;
+    left: 139px;
+}
+
+.BoutonValiderConnexion {
+    z-index: 5;
+    position: absolute;
+    top: 108px;
+    left: 221px;
+    height: 26px;
+    width: 31px;
+}
+
+.Formulaire {
+    z-index: 5;
+    position: absolute;
+    top: 240px;
+    left: 499px;
+    height: 274px;
+    width: 291px;
+}
+
+.LoginRegister {
+    z-index: 5;
+    position: absolute;
+}
+
+.PasswordRegister {
+    z-index: 5;
+    position: absolute;
+    top: 358px;
+    left: 519px;
+    height: 19px;
+}
+
+.PasswordConfirmationRegister {
+    z-index: 5;
+    position: absolute;
+    top: 411px;
+    left: 519px;
+    height: 21px;
+}
+
+.TextBoxLoginRegister {
+    z-index: 5;
+    position: absolute;
+    top: 298px;
+    left: 646px;
+}
+
+.TextBoxPasswordRegister {
+    z-index: 5;
+    position: absolute;
+    top: 355px;
+    left: 647px;
+}
+
+
+
+.TextBoxPasswordConfirmationRegister {
+    z-index: 5;
+    position: absolute;
+    top: 409px;
+    left: 648px;
+}
+
+.BoutonValiderRegister {
+    z-index: 5;
+    position: absolute;
+    top: 476px;
+    left: 747px;
+    height: 26px;
+}
+
+.ErreurRegister {
+    z-index: 5;
+    position: absolute;
+    top: 486px;
+    left: 511px;
+}
+
+.ErreurLogin {
+    z-index: 5;
+    position: absolute;
+    top: 112px;
+    left: 55px;
+}
+
+.BoutonDeconnexion {
+    z-index: 5;
+    position: absolute;
+    top: 26px;
+    left: 55px;
+}
+
+.GridView1 {
+    z-index: 5;
+    position: absolute;
+    top: 258px;
+    left: 515px;
+    margin-right: 0px;
+}
+
+.BoutonAjouterProduit1 {
+    z-index: 5;
+    position: absolute;
+    top: 422px;
+    left: 247px;
+    height: 26px;
+    width: 56px;
+    right: 701px;
+}
+
+.BoutonAjouterProduit2 {
+    z-index: 5;
+    position: absolute;
+    top: 427px;
+    left: 777px;
+    height: 25px;
+    width: 58px;
+    bottom: 436px;
+}
+
+.BoutonAjouterProduit3 {
+    z-index: 5;
+    position: absolute;
+    top: 788px;
+    left: 167px;
+    height: 31px;
+    width: 55px;
+}
+
+.BoutonAjouterProduit4 {
+    z-index: 5;
+    position: absolute;
+    top: 742px;
+    left: 757px;
+}
+
+.TextBoxAjouterProduit1 {
+    z-index: 5;
+    position: absolute;
+}
+
+.TextBoxAjouterProduit2 {
+    z-index: 5;
+    position: absolute;
+}
+
+.TextBoxAjouterProduit3 {
+    z-index: 5;
+    position: absolute;
+    top: 743px;
+    left: 179px;
+    width: 33px;
+    height: 24px;
+}
+
+.TextBoxAjouterProduit4 {
+    z-index: 5;
+    position: absolute;
+}
+
+.PrixTotal {
+    z-index: 5;
+    position: absolute;
+}
+
+.PrixTotalCalcule {
+    z-index: 5;
+    position: absolute;
+    top: 455px;
+    left: 617px;
+    bottom: 301px;
+}
+
+.Pub1 {
+    z-index: 5;
+    position: absolute;
+    top: 299px;
+    left: 10px;
+}
+
+.Pub2 {
+    z-index: 5;
+    position: absolute;
+    top: 238px;
+    left: 1124px;
+}
+
+.ErreurConnection {
+    z-index: 5;
+    position: absolute;
+    top: 160px;
+    left: 539px;
+}
+
+.Hoegaarden {
+    z-index: 5;
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    height: 175px;
+    width: 176px;
+}
+
+.Weed {
+    z-index: 5;
+    position: absolute;
+    top: 230px;
+    left: 544px;
+    height: 186px;
+    width: 186px;
+}
+
+.Leffe {
+    z-index: 5;
+    position: absolute;
+    top: 565px;
+    left: 41px;
+    height: 160px;
+    width: 162px;
+}
+
+.Kronenbourg {
+    z-index: 5;
+    position: absolute;
+    top: 562px;
+    left: 567px;
+    height: 164px;
+    width: 165px;
+}
+
+.PrixHoegaarden {
+    z-index: 5;
+    position: absolute;
+    top: 372px;
+    left: 229px;
+    height: 26px;
+    width: 94px;
+}
+
+.PrixWeed {
+    z-index: 5;
+    position: absolute;
+    top: 373px;
+    left: 744px;
+    width: 104px;
+}
+
+.PrixLeffe {
+    z-index: 5;
+    position: absolute;
+    top: 685px;
+    left: 214px;
+}
+
+.PrixKronenbourg {
+    z-index: 5;
+    position: absolute;
+    top: 688px;
+    left: 742px;
+    width: 108px;
+}
+
+.LabelHoegaarden {
+    z-index: 5;
+    position: absolute;
+    top: 428px;
+    left: 66px;
+    width: 116px;
+}
+
+.LabelWeed {
+    z-index: 5;
+    position: absolute;
+    top: 433px;
+    left: 595px;
+    width: 85px;
+}
+
+.LabelLeffe {
+    z-index: 5;
+    position: absolute;
+    top: 750px;
+    left: 83px;
+    width: 79px;
+}
+
+.LabelKronenbourg {
+    z-index: 5;
+    position: absolute;
+    top: 744px;
+    left: 572px;
+    width: 135px;
+}
