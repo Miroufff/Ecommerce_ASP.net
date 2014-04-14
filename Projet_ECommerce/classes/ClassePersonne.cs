@@ -37,5 +37,9 @@ namespace Projet_ECommerce.classes
         }
     
         #endregion
+
+        #region Constructeur
+            
+        #endregion
     }
 }

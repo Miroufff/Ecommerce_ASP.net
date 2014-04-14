@@ -117,22 +117,23 @@ namespace Projet_ECommerce.classes
 
         public static Boolean Validate_Login(String Login, String Password)
         {
+            //connection
             ClassePersonne Personne = new ClassePersonne();
             ConnectionStringSettings connectionStringSettings = ConfigurationManager.ConnectionStrings["EcommerceConnectionString"];
             SqlConnection connection = new SqlConnection(connectionStringSettings.ToString());
 
             SqlCommand commande = new SqlCommand();
-
+            //commande
             commande.Connection = connection;
             commande.CommandText = @"SELECT count(*) AS Retour FROM Personne
                                     WHERE Login = @Login And Password = @Password;";
-
+            //paramètre
             commande.Parameters.AddWithValue("Login", Login);
             commande.Parameters.AddWithValue("Password", Password);
 
             try
             {
-
+                //execution
                 connection.Open();
 
                 SqlDataReader Rd = commande.ExecuteReader();

@@ -67,6 +67,7 @@
     <Content Include="Image\grunge-marron.jpg" />
     <Content Include="Image\Localisation.jpg" />
     <Content Include="Image\Logo-Honeycomb.png" />
+    <Content Include="Image\panier-vide.jpg" />
     <Content Include="Image\Pub1.PNG" />
     <Content Include="Image\Pub2.PNG" />
     <Content Include="Panier.aspx" />

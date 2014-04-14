@@ -8,13 +8,15 @@ namespace Projet_ECommerce.classes
 {
     public class ClassePanier
     {
+        
         #region Attribut
 
         private String _NomProduit;
         private double _Prix;
         private int _Quantite;
         private double _PrixTotal;
-
+        private int _Stock;
+        
         #endregion
 
         #region Propriété
@@ -41,6 +43,12 @@ namespace Projet_ECommerce.classes
         {
             get { return _PrixTotal; }
             set { _PrixTotal = value; }
+        }
+
+        public int Stock
+        {
+            get { return _Stock; }
+            set { _Stock = value; }
         }
         
         #endregion

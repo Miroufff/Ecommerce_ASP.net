@@ -121,6 +121,15 @@ namespace Projet_ECommerce {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
+        /// Contrôle Paniervide.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton Paniervide;
+        
+        /// <summary>
         /// Contrôle Label8.
         /// </summary>
         /// <remarks>
@@ -182,5 +191,14 @@ namespace Projet_ECommerce {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label PrixTotalCalcule;
+        
+        /// <summary>
+        /// Contrôle Viderlepanier.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Viderlepanier;
     }
 }

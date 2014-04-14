@@ -12,15 +12,18 @@ namespace Projet_ECommerce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            if (Session["Log"].Equals(true))
+
+            if (Session["Log"].Equals(true)) 
             {
+                Paniervide.Visible = true;
+                Viderlepanier.Visible = false;
                 TextBoxLogin.Visible = false;
                 TextBoxPassword.Visible = false;
                 Button1.Visible = false;
                 Login1.Visible = false;
                 Password.Visible = false;
                 Deconnexion.Visible = true;
+                Viderlepanier.Visible = false;
                 double Total;
                 Total = 0;
 
@@ -30,23 +33,27 @@ namespace Projet_ECommerce
                 {
                     GridView1.DataSource = Session["Panier"];
                     GridView1.DataBind();
+
                     List<ClassePanier> Lt;
                     Lt = (List<ClassePanier>)Session["Panier"];
                     if (Lt.Count > 0)
                     {
+                        Paniervide.Visible = false;
                         PrixTotalCalcule.Visible = true;
                         PrixTotalLabel.Visible = true;
+                        Viderlepanier.Visible = true;
+
                     }
 
                     foreach (TableRow PrixTotal in GridView1.Rows)
                     {
-                        Total = Total + Convert.ToDouble(PrixTotal.Cells[4].Text);
+                        Total = Total + Convert.ToDouble(PrixTotal.Cells[3].Text);
                     }
                     PrixTotalCalcule.Text = Total + "€";
                 }
                 else
                 {
-                    Response.Redirect("default.aspx");
+                    Response.Redirect("Panier.aspx");
                 }
             }
             else
@@ -105,64 +112,18 @@ namespace Projet_ECommerce
             }
         }
 
+        protected void Viderlepanier_Click(object sender, EventArgs e)
+        {
+            Session["Panier"] = null;
+            GridView1.DataSource = Session["Panier"];
+            GridView1.DataBind();
+            Session["Panier"] = new List<ClassePanier>();
+            Response.Redirect("Panier.aspx");
+        }
+
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<ClassePanier> Lt;
-            if (Session["Panier"] != null)
-            {
-                Lt = (List<ClassePanier>)Session["Panier"];
-                ClassePanier Panier = new ClassePanier();
-                foreach (ClassePanier panier in Lt)
-                {
-                    if (panier.NomProduit.Equals("Hoegaarden"))
-                    {
-                        panier.Quantite = panier.Quantite - 1;
-                        panier.PrixTotal = panier.Prix * panier.Quantite;
-                        if (panier.Quantite == 0)
-                        {
-                            Lt.RemoveAt(0);
-                            Session["Session"] = Lt;
-                            Response.Redirect("Panier.aspx");
-                        }
-                    }
-                    if (panier.NomProduit.Equals("Weed"))
-                    {
-                        panier.Quantite = panier.Quantite - 1;
-                        panier.PrixTotal = panier.Prix * panier.Quantite;
-                        if (panier.Quantite == 0)
-                        {
-                            Lt.RemoveAt(1);
-                            Session["Session"] = Lt;
-                            Response.Redirect("Panier.aspx");
-                        }
-                    }
-                    if (panier.NomProduit.Equals("Leffe"))
-                    {
-                        panier.Quantite = panier.Quantite - 1;
-                        panier.PrixTotal = panier.Prix * panier.Quantite;
-                        if (panier.Quantite == 0)
-                        {
-                            Lt.RemoveAt(2);
-                            Session["Session"] = Lt;
-                            Response.Redirect("Panier.aspx");
-                        }
-                    }
-                    if (panier.NomProduit.Equals("Kronenbourg"))
-                    {
-                        panier.Quantite = panier.Quantite - 1;
-                        panier.PrixTotal = panier.Prix * panier.Quantite;
-                        if (panier.Quantite == 0)
-                        {
-                            Lt.RemoveAt(3);
-                            Session["Session"] = Lt;
-                            Response.Redirect("Panier.aspx");
-                        }
-                    }
-                }
 
-                Session["Session"] = Lt;
-                Response.Redirect("Panier.aspx");
-            }
         }
     }
 }

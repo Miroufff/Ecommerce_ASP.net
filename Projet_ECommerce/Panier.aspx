@@ -16,6 +16,14 @@
             right: 395px;
         }
 
+        .auto-style2 {
+            width: 737px;
+            height: 276px;
+        }
+        .auto-style3 {
+            height: 222px;
+        }
+
     </style>
 </head>
 <body>
@@ -47,6 +55,7 @@
         <a href="Panier.aspx">
         <asp:Label ID="Label7" runat="server" BackColor="#99CCFF" BorderColor="#663300" BorderStyle="Outset" CssClass="Lien3" Font-Bold="True" Font-Names="Century Schoolbook" Font-Overline="False" Font-Strikeout="False" ForeColor="Black" Text="Mon panier"></asp:Label>
         </a>
+            <asp:ImageButton ID="Paniervide" runat="server" CssClass="Paniervide auto-style3" ImageUrl="~/Image/panier-vide.jpg" Width="630px" />
         </p>
     &nbsp;<img alt="" class="Fond" src="Image/beige_leather_1024.jpg" style="background-image: url('Image/beige_leather_1024.jpg'); background-attachment: fixed;" /><asp:Label ID="Label8" runat="server" CssClass="Connexion" Text="Label"></asp:Label>
         <asp:Label ID="ErreurLogin" runat="server" CssClass="ErreurLogin"></asp:Label>
@@ -55,14 +64,12 @@
 
         </div>
         <asp:GridView ID="GridView1" runat="server" CssClass="GridView1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
-            <Columns>
-                <asp:ButtonField ButtonType="Button" CommandName="Select" Text="Supprimer" />
-            </Columns>
         </asp:GridView>
         <asp:Label ID="PrixTotalLabel" runat="server" CssClass="PrixTotal auto-style1" Text="PrixTotal : " Visible="False"></asp:Label>
         <asp:Label ID="PrixTotalCalcule" runat="server" CssClass="PrixTotalCalcule" Visible="False"></asp:Label>
-    </form>
     <img id="Pub1" alt="" class="Pub1" src="Image/Pub1.PNG" />
     <img id="Pub2" alt="" class="Pub2" src="Image/Pub2.PNG" />
+        <asp:Button ID="Viderlepanier" runat="server" CssClass="Viderlepanier" OnClick="Viderlepanier_Click" Text="Vider le panier" Visible="False" />
+    </form>
     </body>
 </html>
